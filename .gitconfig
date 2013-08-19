@@ -2,7 +2,7 @@
     name = Hyunjin CHA
     email = gump.cha@gmail.com
 [core]
-    excludefiles = ~/.gitignore
+    excludesfile = ~/.gitignore
 [color]
     ui = auto
 [alias]
