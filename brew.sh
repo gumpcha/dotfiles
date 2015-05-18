@@ -19,7 +19,7 @@ brew upgrade
 
 
 brew install bash
-brew install brew-cask
+brew install caskroom/cask/brew-cask
 brew install git
 brew install htop-osx
 brew install jq
@@ -36,6 +36,10 @@ brew install z
 brew install zsh
 
 brew cask install google-chrome
+brew cask install dropbox
+brew cask install nvalt
+brew cask install omnifocus
+brew cask install virtualbox
 
 ### quicklook plugin 
 
