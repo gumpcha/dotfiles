@@ -40,6 +40,7 @@ brew cask install dropbox
 brew cask install nvalt
 brew cask install omnifocus
 brew cask install virtualbox
+brew cask install iterm2
 
 ### quicklook plugin 
 
