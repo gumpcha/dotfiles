@@ -46,6 +46,7 @@ brew cask install filezilla
 brew cask install alfred
 brew cask install utorrent
 brew cask install atom
+brew cask install steam
 
 ### quicklook plugin 
 
