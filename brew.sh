@@ -42,6 +42,10 @@ brew cask install omnifocus
 brew cask install virtualbox
 brew cask install iterm2
 brew cask install 1password
+brew cask install filezilla
+brew cask install alfred
+brew cask install utorrent
+brew cask install atom
 
 ### quicklook plugin 
 
