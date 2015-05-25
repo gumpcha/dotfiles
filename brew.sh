@@ -47,6 +47,7 @@ brew cask install alfred
 brew cask install utorrent
 brew cask install atom
 brew cask install steam
+brew cask install xtrafinder
 
 ### quicklook plugin 
 
