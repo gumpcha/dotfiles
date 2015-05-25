@@ -48,6 +48,7 @@ brew cask install utorrent
 brew cask install atom
 brew cask install steam
 brew cask install xtrafinder
+brew cask install sublime-text
 
 ### quicklook plugin 
 
