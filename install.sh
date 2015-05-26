@@ -5,3 +5,4 @@ for file in ~/dotfiles/.*; do
 	ln -s $file ~/`basename $file`
 done
 
+# XXX ~/Dropbox/PrivateConfig/.config
