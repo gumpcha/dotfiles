@@ -49,6 +49,7 @@ brew cask install atom
 brew cask install steam
 brew cask install xtrafinder
 brew cask install sublime-text
+brew cask install robomongo
 
 ### quicklook plugin 
 
