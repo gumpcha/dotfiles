@@ -65,5 +65,7 @@ alias tlog="tail -n 1000 -F `ls -trl | tail -n1 | awk '{print $NF}'`"
 
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh # This loads NVM
 
+. `brew --prefix`/etc/profile.d/z.sh
+
 # vim mode in shell
 set -o vi
