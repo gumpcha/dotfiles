@@ -50,6 +50,7 @@ brew cask install steam
 brew cask install xtrafinder
 brew cask install sublime-text
 brew cask install robomongo
+brew cask install adapter
 
 ### quicklook plugin 
 
