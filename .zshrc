@@ -48,13 +48,13 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git history-substring-search zsh-syntax-highlighting)
+plugins=(git history-substring-search zsh-syntax-highlighting git-open)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/local/opt/ruby/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/Users/gumpcha/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/share/npm/bin:/Users/gumpcha/bin"
+export PATH="/usr/local/opt/ruby/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/Users/gumpcha/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/share/npm/bin:/Users/gumpcha/bin:./node_modules/.bin:/Users/gumpcha/Library/Python/2.7/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -87,6 +87,8 @@ alias icookie_dev='ssh administrator@icookie-dev.chahoolab.co.kr'
 
 # z
 source `brew --prefix`/etc/profile.d/z.sh
+
+[ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh # This loads NVM
 
 #set -o vi or bindkey -v, but conflict with history-substring-search
 
