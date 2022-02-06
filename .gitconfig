@@ -1,6 +1,8 @@
 [user]
     name = Hyunjin CHA
     email = gump.cha@gmail.com
+[credential]
+    helper = osxkeychain
 [core]
     excludesfile = ~/.gitignore
 [color]
@@ -10,8 +12,24 @@
     co = checkout
     st = status
     ls = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --graph
+    lsb = ls --branches
     ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
     ld = log --pretty=format:"%C(yellow)%h\\ %ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --graph --date=short
     br = branch -v
 [push]
-	default = simple
+    default = simple
+[pager]
+    #diff = diff-highlight | less
+    diff = delta
+    stash = false
+    branch = false
+[filter "lfs"]
+    clean = git-lfs clean %f
+    smudge = git-lfs smudge %f
+    required = true
+[github]
+    user = gumpcha
+[init]
+    templatedir = ~/.git_template
+[merge]
+    conflictstyle = diff3
