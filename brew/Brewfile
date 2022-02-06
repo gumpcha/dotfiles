@@ -7,6 +7,7 @@ tap "homebrew/cask-fonts"
 
 brew "python3"
 brew "ruby"
+brew "nvm"
 brew "coreutils"
 brew "gh"
 brew "git"
@@ -33,6 +34,7 @@ cask "alfred"
 cask "notion"
 cask "dropbox"
 cask "font-hack-nerd-font"
+cask "docker"
 
 mas "PopClip", id: 445189367
 mas "Slack", id: 803453959
