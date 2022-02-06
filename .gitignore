@@ -2,3 +2,6 @@
 *.swp
 *.log
 *.pyc
+
+# macOS generated
+**/.DS_Store
