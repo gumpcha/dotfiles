@@ -18,8 +18,7 @@
 [push]
     default = simple
 [pager]
-    #diff = diff-highlight | less
-    diff = delta
+    diff = delta    ; git-delta
     stash = false
     branch = false
 [filter "lfs"]

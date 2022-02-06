@@ -26,6 +26,7 @@ brew "the_silver_searcher"
 brew "tree"
 brew "wget"
 brew "z"
+brew "git-delta"
 
 cask "iterm2"
 cask "visual-studio-code"
