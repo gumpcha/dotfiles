@@ -80,11 +80,6 @@ alias lss='ls -Srl'
 alias tlog="tail -n 1000 -F `ls -trl | tail -n1 | awk '{print $NF}'`"
 alias cask='brew cask'
 
-# Work
-alias kigglessh='ssh kiggle@dbms.kiggletalk.com'
-alias kiggleftp='sftp kiggle@dbms.kiggletalk.com'
-alias icookie_dev='ssh administrator@icookie-dev.chahoolab.co.kr'
-
 # z
 source `brew --prefix`/etc/profile.d/z.sh
 
