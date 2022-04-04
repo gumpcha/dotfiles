@@ -1,3 +1,10 @@
+# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Initialization code that may require console input (password prompts, [y/n]
+# confirmations, etc.) must go above this block; everything else may go below.
+if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -5,7 +12,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="robbyrussell"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
@@ -48,7 +55,14 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git history-substring-search zsh-syntax-highlighting git-open)
+plugins=(
+git 
+history-substring-search 
+git-open
+aws
+zsh-vim-mode
+zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -56,9 +70,10 @@ source $ZSH/oh-my-zsh.sh
 
 export PATH="/usr/local/opt/ruby/bin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/Users/gumpcha/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/opt/ruby/bin:/usr/local/sbin:/usr/local/share/npm/bin:/Users/gumpcha/bin:./node_modules/.bin:/Users/gumpcha/Library/Python/2.7/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
+export PATH="/usr/local/opt/mysql-client/bin:$PATH"
 
 # You may need to manually set your language environment
-export LANG=ko_KR.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -80,11 +95,6 @@ alias lss='ls -Srl'
 alias tlog="tail -n 1000 -F `ls -trl | tail -n1 | awk '{print $NF}'`"
 alias cask='brew cask'
 
-# Work
-alias kigglessh='ssh kiggle@dbms.kiggletalk.com'
-alias kiggleftp='sftp kiggle@dbms.kiggletalk.com'
-alias icookie_dev='ssh administrator@icookie-dev.chahoolab.co.kr'
-
 # z
 source `brew --prefix`/etc/profile.d/z.sh
 
@@ -95,3 +105,9 @@ source `brew --prefix`/etc/profile.d/z.sh
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
+eval "$(hub alias -s)"
+
+eval "$(direnv hook zsh)"
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
