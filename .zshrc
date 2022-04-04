@@ -56,12 +56,12 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(
-git 
-history-substring-search 
-git-open
-aws
-zsh-vim-mode
-zsh-syntax-highlighting
+    git 
+    history-substring-search 
+    git-open
+    aws
+    zsh-vim-mode
+    zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
