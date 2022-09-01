@@ -102,11 +102,6 @@ source `brew --prefix`/etc/profile.d/z.sh
 
 #set -o vi or bindkey -v, but conflict with history-substring-search
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-eval "$(hub alias -s)"
-
 eval "$(direnv hook zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
