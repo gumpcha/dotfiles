@@ -36,6 +36,7 @@ cask "notion"
 cask "dropbox"
 cask "font-hack-nerd-font"
 cask "docker"
+cask "dbeaver-community"
 
 mas "PopClip", id: 445189367
 mas "Slack", id: 803453959
