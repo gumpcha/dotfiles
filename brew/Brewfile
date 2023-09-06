@@ -27,6 +27,7 @@ brew "tree"
 brew "wget"
 brew "z"
 brew "git-delta"
+brew "rectangle"
 
 cask "iterm2"
 cask "visual-studio-code"
