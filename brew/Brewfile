@@ -17,6 +17,7 @@ brew "peco"
 brew "fzf"
 brew "htop"
 brew "httpie"
+brew "redis"
 brew "jid"
 brew "jq"
 brew "lsd"
@@ -26,16 +27,21 @@ brew "wget"
 brew "z"
 brew "git-delta"
 brew "rectangle"
+brew "hashicorp/tap/terraform"
+brew "mongodb/brew/mongodb-community-shell"
+brew "mongodb/brew/mongodb-database-tools"
 
+cask "google-chrome"
 cask "iterm2"
 cask "visual-studio-code"
-cask "1password"
 cask "alfred"
 cask "notion"
 cask "font-hack-nerd-font"
 cask "docker"
 cask "dbeaver-community"
+cask "rectangle"
 
+mas "1Password 7", id: 1333542190
 mas "PopClip", id: 445189367
 mas "Slack", id: 803453959
 mas "Xcode", id: 497799835
