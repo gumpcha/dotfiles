@@ -1,6 +1,4 @@
-tap "homebrew/core"
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "argon/mas"
 tap "github/gh"
 tap "homebrew/cask-fonts"
